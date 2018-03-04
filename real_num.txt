@@ -1,0 +1,33 @@
+start 
+\+\-	sign
+1-9 int_end
+0 	zero_end 
+
+sign
+0	zero_end
+1-9 int_end
+
+zero_end
+1-9	int_end
+,	comma
+
+int_end
+0-9 int_end
+,	comma
+
+comma
+0-9	fract_end
+
+fract_end
+0-9	fract_end
+e	e
+
+e
+\+\-	esign
+0-9	exp_end
+
+esign
+0-9 exp_end
+
+exp_end
+0-9	exp_end
